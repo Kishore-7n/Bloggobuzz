@@ -23,7 +23,9 @@ mongoose.connect(process.env.MONGO_URL,{
 }); 
 
 
- 
+app.get('/',(req,res)=>{
+    res.status(200).send("WELCOME USERS");
+})
 app.post('/create',async(req,res)=>{
     console.log(req.body)
     const blog =  new Blog(req.body);

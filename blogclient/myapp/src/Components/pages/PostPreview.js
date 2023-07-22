@@ -14,7 +14,7 @@ import Pagination from '@mui/material/Pagination';
 const ITEMS_PER_PAGE = 8;
 
 function PostPreview() {
-  const url = "http://localhost:5000/blog";
+  const url = "https://blog-lhix.onrender.com/blog";
   const [data, setData] = useState([]);
   const [loading,setloading] = useState(false);
   const fetchInfo = async () => {

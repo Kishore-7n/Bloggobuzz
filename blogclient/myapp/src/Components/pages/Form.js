@@ -49,7 +49,7 @@ export default function Form() {
     }
     const handlesubmit =  async(event) => {
         event.preventDefault();
-        const blogdata = await fetch('http://localhost:5000/create',{
+        const blogdata = await fetch('https://blog-lhix.onrender.com/create',{
             method:'post',
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify({
